@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if title %}{{ title }}{% endif %}</title>
+    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    {%- typography 'xxx' -%}
+    {%- typographyFonts 'xxx' -%}
+    <style>
+      main {
+        max-width: 45em;
+        margin: 2em auto;
+        padding: 1em 1.5em 0.5em 1.5em;
+        border-radius: 4px;
+        background-color: white;
+      }
+      body {
+        background-color: #FF8300;
+        background-image: linear-gradient(#FF8300,#00BB3F, #1531AE);
+        padding: 0.5em;
+      }
+      .lilypond {
+        margin-bottom: 2em;
+      }
+      .lilypond svg,
+      .lilypond svg > a,
+      .lilypond path,
+      .lilypond rect {
+        color: #222 !important;
+      }
+
+      /* CODE HIGHLIGHT */
+      code, pre {
+        font-family: 'Source Code Pro', monospace;
+      }
+      pre {
+        margin-bottom: 2em !important;
+      }
+      .highlight-line {
+        display: inline-block;
+
+        /* del, ins, mark default styles */
+        text-decoration: none;
+        color: inherit;
+        padding: 0.125em 1em; /* 2px 16px /16 */
+      }
+
+      /* allow highlighting empty lines */
+      .highlight-line:empty:before {
+        content: " ";
+      }
+
+      .highlight-line:not(:last-child) {
+        min-width: 100%;
+      }
+      .highlight-line .highlight-line:not(:last-child) {
+        min-width: 0;
+      }
+
+      /* Dark Theme */
+      .highlight-line-isdir {
+          color: #b0b0b0;
+          background-color: #222;
+      }
+      .highlight-line-active {
+          background-color: #444;
+          background-color: hsla(0, 0%, 27%, .8);
+      }
+      .highlight-line-add {
+          background-color: #45844b;
+      }
+      .highlight-line-remove {
+          background-color: #902f2f;
+      }
+    </style>
+	</head>
+	<body>
+
+    <div id="main-content" class="main-content">
+
+      <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+        {{ content | safe }}
+      </main>
+
+      <footer></footer>
+    </div>
+	</body>
+</html>
