@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if title %}{{ title }}{% endif %}</title>
-    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/prism-okaidia.css' | url }}">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     {%- typography 'xxx' -%}
     {%- typographyFonts 'xxx' -%}
@@ -29,6 +29,25 @@
       .lilypond path,
       .lilypond rect {
         color: #222 !important;
+      }
+      /* LILYPOND CODE HIGHLIGHT */
+      /* MONOKAI COLORS */
+      /*
+        pink: #FF6188;
+        green: #A9DC76;
+        yellow: #FFD866; 
+        orange: #FC9867;
+        purple: #AB9DF2
+        blue: #78DCE8;
+      */
+      .notechord {
+        color:#FFD866;
+      }
+      .reserved, .builtin {
+        color: #FC9867;;
+      }
+      .timesig {
+        color:#FF6188;
       }
 
       /* CODE HIGHLIGHT */

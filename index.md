@@ -8,7 +8,7 @@ layout: layouts/base.njk
 
 This markdown
 
-```latex/0,7
+```ly/0,7
 {% raw %}{% lilypond 'inline', 'preview', '0.7 in' %}
 \score{
 	\relative c'' {
@@ -31,7 +31,7 @@ renders to this. :o
 {% endlilypond %}
 
 The lilypond must be enclosed in Nunjucks tags.
-```latex
+```ly
 {% raw %}{% lilypond 'inline'|'img', 'preview'|'full', 'height' %}
 //lilypond markup ...
 {% endlilypond %}{% endraw %}
@@ -40,10 +40,11 @@ The lilypond must be enclosed in Nunjucks tags.
 Here is a longer example. Notice how the 2<sup>nd</sup> parameter is marked 'full'. Lilypond will then render the image to the height specified in the 3<sup>rd</sup> parameter. If marked 'preview' the height parameter will be ignored.
 
 
-```latex/0
+```ly/0
 {% raw %}{% lilypond 'inline', 'full', '2.3 in' %}
 \score{
 	\relative c' {
+    \tempo 4 = 160
     c1 f c c \break
     f f c c \break
     g' f c c
@@ -136,8 +137,8 @@ lhMusic = \relative c' {
 
 The previous example was really long.
 
-```latex
-rhMusic = \relative c'' {
+```ly
+ rhMusic = \relative c'' {
   \new Voice {
     r2 c4.\( g8 |
     \once \override Tie.staff-position = #3.5
