@@ -8,6 +8,7 @@ const { svgo } = require("./LilypondExtension")
 // Setup up typography
 const Typography = require('typography');
 const theme = require('typography-theme-lincoln');
+// const theme = require('typography-theme-funston');
 const typography = new Typography(theme);
 
 // used to minify the svg output of Lilypond
@@ -28,6 +29,9 @@ module.exports = function(eleventyConfig) {
       var re_identifier_end = /(?![_-]?[^\W\d])/;
       var string = /(")(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/;
 
+      // Bug in eleventy-syntax-highlight prevents multi-line elements
+      // from displaying properly
+      // see https://github.com/11ty/eleventy-plugin-syntaxhighlight/issues/12
       Prism.languages.lilypond = {
         // 'comment': [
         //   {
@@ -56,14 +60,17 @@ module.exports = function(eleventyConfig) {
   });
 
   // Inject the typography into the page
+  // Typography bug: typography.toString() outputs default, not applied string
+  // see https://github.com/KyleAMathews/typography.js/issues/205
   eleventyConfig.addShortcode('typography', () => {
     return `<style type="text/css">${typography.toString()}</style>`;
   });
   eleventyConfig.addShortcode("typographyFonts", () => {
+    googleFonts = theme.default.googleFonts;
     let fonts = []
-    for (let i in theme.googleFonts) {
-      let name = theme.googleFonts[i].name.replace(/\s/g, "+");
-      let tempString = `${name}:${theme.googleFonts[i].styles.join(',')}`;
+    for (let i in googleFonts) {
+      let name = googleFonts[i].name.replace(/\s/g, "+");
+      let tempString = `${name}:${googleFonts[i].styles.join(',')}`;
       fonts.push(tempString);
     }
     return `<link href="https://fonts.googleapis.com/css?family=${fonts.join('|')}" rel="stylesheet">`;
