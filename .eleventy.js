@@ -75,6 +75,35 @@ module.exports = function(eleventyConfig) {
     return `<link href="https://fonts.googleapis.com/css?family=${fonts.join('|')}" rel="stylesheet">`;
   });
 
+  // The LilyPond Syntax highlihgt extension
+  // pass source code to python-ly for syntax highlighting
+  eleventyConfig.addNunjucksTag("lilycode", function(nunjucksEngine) {
+    return new function() {
+      this.tags = ['lilycode'];
+      this.parse = function(parser, nodes, lexer) {
+        var tok = parser.nextToken();
+        var args = parser.parseSignature(null, true);
+        parser.advanceAfterBlockEnd(tok.value);
+        var body = parser.parseUntilBlocks('endlilycode');
+        parser.advanceAfterBlockEnd();
+        return new nodes.CallExtensionAsync(this, 'run', args, [body]);
+      }
+      this.run = function(context, body, callback) {
+        let execString = `echo "${body().trim()}" | ly highlight -d full_html=false -d wrapper_tag=code -d document_id=language-lilypond`;
+        exec(execString, function(err, stdout, stderr) {
+          if(err) {
+              console.error(err);
+              return;
+          }
+          console.error(stderr);
+          let formatedHtml = `<pre class="language-lilypond">${stdout}</pre>`;
+          let ret = new nunjucksEngine.runtime.SafeString(formatedHtml);
+          callback(null, ret);
+        })
+      }
+    }
+  })
+
   // The Lilypond extension
   eleventyConfig.addNunjucksTag("lilypond", function(nunjucksEngine) {
     return new function() {
