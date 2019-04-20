@@ -33,18 +33,17 @@ module.exports = function(eleventyConfig) {
       // from displaying properly
       // see https://github.com/11ty/eleventy-plugin-syntaxhighlight/issues/12
       Prism.languages.lilypond = {
-        // 'comment': [
-        //   {
-        //     'pattern': /(^|[^\%])\%\{[\s\S]*?(?:\%\}|$)/,
-        //     'lookbehind': true,
-        //   },
-        //   {
-        //     'pattern': /(^|[^\%:])\%.*/,
-        //     'lookbehind': true,
-        //     'greedy': true
-        //   }
-        // ],
-        'comment': /%.*/m,
+        'comment': [
+          {
+            'pattern': /(^|[^\%])\%\{[\s\S]*?(?:\%\}|$)/,
+            'lookbehind': true,
+          },
+          {
+            'pattern': /(^|[^\%:])\%.*/,
+            'lookbehind': true,
+            'greedy': true
+          }
+        ],
         'string': {
           'pattern': string,
           'greedy': true
