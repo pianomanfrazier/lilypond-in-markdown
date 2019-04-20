@@ -4,17 +4,6 @@ date: 2019-04-15
 layout: layouts/base.njk
 ---
 
-# Test
-
-{% lilycode %}
-\score{
-	\relative c'' {
-    g8 e \tuplet 3/2 { f[ a c] } e d a b c4
-	}
-	\layout{}
-}
-{% endlilycode %}
-
 # Lilypond in Markdown
 
 This markdown
