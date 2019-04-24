@@ -20,10 +20,10 @@ code[class*="language-"], pre[class*="language-"] {
 
 pre[class*="language-"] {
     padding: 1.5em;
-    /* padding-bottom: 0; */
     margin: .5em 0;
     margin-bottom: 2em;
     overflow: auto;
+    border-radius: 4px;
 }
 
 :not(pre)>code[class*="language-"] {

@@ -4,16 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if title %}{{ title }}{% endif %}</title>
-    {# <link rel="stylesheet" href="{{ '/css/prism-okaidia.css' | url }}"> #}
-    {# <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}"> #}
     <link rel="stylesheet" href="{{ '/css/lilypond.css' | url }}">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     {%- typographyFonts 'xxx' -%}
-    {# TypographyJS has a bug that does not actually output the theme #}
-    {# For now the theme is a copy and paste of the correct output in a separate CSS file #}
-    {# {%- typography 'xxx' -%} #}
-    <link rel="stylesheet" href="{{ '/css/lincoln.css' | url }}">
-    {# <link rel="stylesheet" href="{{ '/css/funston.css' | url }}"> #}
+    {%- typography 'xxx' -%}
     <style>
       main {
         max-width: 45em;
@@ -36,18 +30,6 @@
       .lilypond rect {
         color: #222 !important;
       }
-      /* LILYPOND CODE HIGHLIGHT */
-      /* MONOKAI COLORS */
-      /*
-        pink: #FF6188;
-        green: #A9DC76;
-        yellow: #FFD866; 
-        orange: #FC9867;
-        purple: #AB9DF2
-        blue: #78DCE8;
-      */
-
-      /* Dark Theme */
     </style>
 	</head>
 	<body>

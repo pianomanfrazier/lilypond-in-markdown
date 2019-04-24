@@ -7,7 +7,7 @@ const { svgo } = require("./LilypondExtension")
 
 // Setup up typography
 const Typography = require('typography');
-const theme = require('typography-theme-lincoln');
+const theme = require('typography-theme-lincoln').default;
 // const theme = require('typography-theme-funston');
 const typography = new Typography(theme);
 
@@ -65,7 +65,7 @@ module.exports = function(eleventyConfig) {
     return `<style type="text/css">${typography.toString()}</style>`;
   });
   eleventyConfig.addShortcode("typographyFonts", () => {
-    googleFonts = theme.default.googleFonts;
+    googleFonts = theme.googleFonts;
     let fonts = []
     for (let i in googleFonts) {
       let name = googleFonts[i].name.replace(/\s/g, "+");
