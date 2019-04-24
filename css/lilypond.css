@@ -1,0 +1,144 @@
+code[class*="language-"], pre[class*="language-"] {
+    font-family: 'Source Code Pro', monospace;
+    line-height: 1.5;
+    font-size: 14px;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    background: #272822;
+    color: #f8f8f2;
+}
+
+pre[class*="language-"] {
+    padding: 1.5em;
+    /* padding-bottom: 0; */
+    margin: .5em 0;
+    margin-bottom: 2em;
+    overflow: auto;
+}
+
+:not(pre)>code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+}
+
+.language-lilypond {}
+
+/* MONOKAI COLORS */
+
+/*
+pink
+color: #FF6188;
+
+green
+color: #A9DC76;
+
+yellow
+color: #FFD866; 
+
+orange
+color: #FC9867;
+
+purple
+color: #AB9DF2;
+
+blue
+color: #78DCE8;
+*/
+
+/* base styles */
+
+.comment {
+    color: #75715e;
+    font-style: italic;
+}
+
+.error {
+    color: #ff0000;
+    text-decoration: underline;
+    text-decoration-color: #ff0000;
+}
+
+.escape {
+    color: #78DCE8;
+}
+
+.function {
+    color: #FC9867;
+    font-weight: bold;
+}
+
+.keyword {
+    color: #A9DC76;
+    font-weight: bold;
+}
+
+.string {
+    color: #FFD866; 
+}
+
+.value {
+    color: #AB9DF2;
+}
+
+.variable {
+    color: #FF6188;
+}
+
+/* mode: lilypond */
+
+span.lilypond-articulation {
+    color: #FC9867;
+    font-weight: bold;
+}
+
+span.lilypond-context {
+    font-weight: bold;
+}
+
+span.lilypond-duration {
+    color: #78DCE8;
+}
+
+span.lilypond-dynamic {
+    color: #FC9867;
+    font-weight: bold;
+}
+
+span.lilypond-fingering {
+    color: #FC9867;
+}
+
+span.lilypond-grob {
+    color: #AB9DF2;
+}
+
+span.lilypond-lyricmode {
+    color: #A9DC76;
+}
+
+span.lilypond-lyrictext {
+    color: #A9DC76;
+}
+
+span.lilypond-markup {
+    color: #A9DC76;
+    font-weight: normal;
+}
+
+span.lilypond-slur {
+    font-weight: bold;
+}
+
+span.lilypond-stringnumber {
+    color: #FC9867;
+}
