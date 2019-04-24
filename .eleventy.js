@@ -89,17 +89,39 @@ module.exports = function(eleventyConfig) {
         return new nodes.CallExtensionAsync(this, 'run', args, [body]);
       }
       this.run = function(context, body, callback) {
-        let execString = `echo "${body().trim()}" | ly highlight -d full_html=false -d wrapper_tag=code -d document_id=language-lilypond`;
-        exec(execString, function(err, stdout, stderr) {
-          if(err) {
-              console.error(err);
-              return;
+        // TODO: change all sync calls to async
+        let directory = `_lilycode`;
+        let files = fs.readdirSync(`${directory}`);
+        let hash = MD5(body());
+        let isCached = false;
+        for (var i in files) {
+          if (files[i] === `${hash}.html`) {
+            isCached = true;
           }
-          console.error(stderr);
-          let formatedHtml = `<pre class="language-lilypond">${stdout}</pre>`;
-          let ret = new nunjucksEngine.runtime.SafeString(formatedHtml);
-          callback(null, ret);
-        })
+        }
+        if (isCached) {
+          fs.readFile(`${directory}/${hash}.html`, function(err, data) {
+              if(err) {
+                  console.error(err);
+                  return;
+              }
+              let ret = new nunjucksEngine.runtime.SafeString(minifyHtml(String(data)));
+              callback(null, ret);
+          })
+        } else {
+          let execString = `echo "${body().trim()}" | ly highlight -d full_html=false -d wrapper_tag=code -d document_id=language-lilypond`;
+          exec(execString, function(err, stdout, stderr) {
+            if(err) {
+                console.error(err);
+                return;
+            }
+            console.error(stderr);
+            let formatedHtml = `<pre class="language-lilypond">${stdout}</pre>`;
+            fs.writeFileSync(`${directory}/${hash}.html`, formatedHtml);
+            let ret = new nunjucksEngine.runtime.SafeString(formatedHtml);
+            callback(null, ret);
+          })
+        }
       }
     }
   })

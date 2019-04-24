@@ -1,0 +1,38 @@
+<pre class="language-lilypond"><code class="language-lilypond"><span class="lilypond-uservariable">global</span> = <span class="lilypond-delimiter keyword">{</span> <span class="lilypond-command function">\key</span> <span class="lilypond-pitch">f</span> <span class="lilypond-command function">\major \time</span> <span class="lilypond-value value">6/8</span> <span class="lilypond-command function">\partial</span> <span class="lilypond-duration">8</span> <span class="lilypond-delimiter keyword">}
+
+</span><span class="lilypond-uservariable">SopOneMusic</span> = <span class="lilypond-command function">\relative</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">''</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span><span class="lilypond-slur">(</span><span class="lilypond-beam">[</span> <span class="lilypond-pitch">bes</span><span class="lilypond-slur">)</span><span class="lilypond-beam">]</span> <span class="lilypond-pitch">a a</span><span class="lilypond-slur">(</span><span class="lilypond-beam">[</span> <span class="lilypond-pitch">g</span><span class="lilypond-slur">)</span><span class="lilypond-beam">]</span> <span class="lilypond-pitch">f</span> <span class="lilypond-check">|</span> <span class="lilypond-pitch">f</span><span class="lilypond-octave">'</span><span class="lilypond-duration">4.</span> <span class="lilypond-pitch">b</span><span class="lilypond-octave">,</span> <span class="lilypond-check">|</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">4.</span><span class="lilypond-slur">~</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">4
+</span><span class="lilypond-delimiter keyword">}
+</span><span class="lilypond-uservariable">SopOneLyrics</span> = <span class="lilypond-lyricmode function">\lyricmode</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-lyrictext">Let</span> <span class="lilypond-check">|</span> <span class="lilypond-lyrictext">flee -- cy flocks the</span> <span class="lilypond-check">|</span> <span class="lilypond-lyrictext">hills a -- dorn, __
+</span><span class="lilypond-delimiter keyword">}
+</span><span class="lilypond-uservariable">SopTwoMusic</span> = <span class="lilypond-command function">\relative</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-pitch">r</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4.</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">c</span><span class="lilypond-duration">8</span> <span class="lilypond-check">|</span> <span class="lilypond-pitch">a</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span><span class="lilypond-slur">(</span><span class="lilypond-beam">[</span> <span class="lilypond-pitch">g</span><span class="lilypond-slur">)</span><span class="lilypond-beam">]</span> <span class="lilypond-pitch">f f</span><span class="lilypond-slur">(</span><span class="lilypond-beam">[</span> <span class="lilypond-pitch">e</span><span class="lilypond-slur">)</span><span class="lilypond-beam">]</span> <span class="lilypond-pitch">d</span> <span class="lilypond-check">|</span> <span class="lilypond-pitch">e</span><span class="lilypond-duration">8</span><span class="lilypond-slur">(</span><span class="lilypond-beam">[</span> <span class="lilypond-pitch">d</span><span class="lilypond-slur">)</span><span class="lilypond-beam">]</span> <span class="lilypond-pitch">c bes</span><span class="lilypond-octave">'
+</span><span class="lilypond-delimiter keyword">}
+</span><span class="lilypond-uservariable">SopTwoLyrics</span> = <span class="lilypond-lyricmode function">\lyricmode</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-lyrictext">Let</span> <span class="lilypond-check">|</span> <span class="lilypond-lyrictext">flee -- cy flocks the</span> <span class="lilypond-check">|</span> <span class="lilypond-lyrictext">hills a -- dorn,
+</span><span class="lilypond-delimiter keyword">}
+
+</span><span class="lilypond-keyword keyword">\score</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">ChoirStaff</span> <span class="lilypond-delimiter keyword">&lt;&lt;
+    </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Staff</span> <span class="lilypond-delimiter keyword">&lt;&lt;
+      </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Voice</span> = <span class="lilypond-uservariable">SopOne</span> <span class="lilypond-delimiter keyword">{
+        </span><span class="lilypond-usercommand variable">\global
+        \SopOneMusic
+      </span><span class="lilypond-delimiter keyword">}
+      </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Lyrics</span> <span class="lilypond-lyricmode function">\lyricsto</span> <span class="lilypond-uservariable">SopOne</span> <span class="lilypond-delimiter keyword">{
+        </span><span class="lilypond-usercommand variable">\SopOneLyrics
+      </span><span class="lilypond-delimiter keyword">}
+    &gt;&gt;
+    </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Staff</span> <span class="lilypond-delimiter keyword">&lt;&lt;
+      </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Voice</span> = <span class="lilypond-uservariable">SopTwo</span> <span class="lilypond-delimiter keyword">{
+        </span><span class="lilypond-usercommand variable">\global
+        \SopTwoMusic
+      </span><span class="lilypond-delimiter keyword">}
+      </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Lyrics</span> <span class="lilypond-lyricmode function">\lyricsto</span> <span class="lilypond-uservariable">SopTwo</span> <span class="lilypond-delimiter keyword">{
+        </span><span class="lilypond-usercommand variable">\SopTwoLyrics
+      </span><span class="lilypond-delimiter keyword">}
+    &gt;&gt;
+  &gt;&gt;
+}
+</span></code></pre>

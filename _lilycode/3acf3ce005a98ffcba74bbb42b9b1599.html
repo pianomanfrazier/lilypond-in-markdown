@@ -1,0 +1,21 @@
+<pre class="language-lilypond"><code class="language-lilypond"><span class="lilypond-uservariable">lhMusic</span> = <span class="lilypond-command function">\relative</span> <span class="lilypond-pitch">c</span><span class="lilypond-octave">'</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-pitch">r</span><span class="lilypond-duration">2</span> <span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">c g ees</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">2</span><span class="lilypond-slur">(</span> <span class="lilypond-check">|
+  </span><span class="lilypond-chord">&lt;</span><span class="lilypond-pitch">d g</span><span class="lilypond-octave">,</span> <span class="lilypond-pitch">d</span><span class="lilypond-chord">&gt;</span><span class="lilypond-duration">1</span><span class="lilypond-slur">)</span><span class="lilypond-command function">\arpeggio</span> <span class="lilypond-check">|
+  </span><span class="lilypond-pitch">r</span><span class="lilypond-duration">2.</span> <span class="lilypond-pitch">d</span><span class="lilypond-octave">,,</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">r</span> <span class="lilypond-check">|
+  </span><span class="lilypond-pitch">r</span><span class="lilypond-duration">4
+</span><span class="lilypond-delimiter keyword">}
+
+</span><span class="lilypond-keyword keyword">\score</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">PianoStaff</span> <span class="lilypond-delimiter keyword">&lt;&lt;
+    </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Staff</span> = <span class="lilypond-uservariable">RH  </span><span class="lilypond-delimiter keyword">&lt;&lt;
+      </span><span class="lilypond-command function">\key</span> <span class="lilypond-pitch">g</span> <span class="lilypond-command function">\minor
+      </span><span class="lilypond-usercommand variable">\rhMusic
+    </span><span class="lilypond-delimiter keyword">&gt;&gt;
+    </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Staff</span> = <span class="lilypond-uservariable">LH</span> <span class="lilypond-delimiter keyword">&lt;&lt;
+      </span><span class="lilypond-command function">\key</span> <span class="lilypond-pitch">g</span> <span class="lilypond-command function">\minor
+      \clef</span> <span class="lilypond-specifier variable">bass
+      </span><span class="lilypond-usercommand variable">\lhMusic
+    </span><span class="lilypond-delimiter keyword">&gt;&gt;
+  &gt;&gt;
+}
+</span></code></pre>
