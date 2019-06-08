@@ -1,4 +1,4 @@
-# Lilypond in Markdown
+# LilyPond in Markdown
 
 My previous way of blogging about music was too tedious. This is a proof of concept to show that LilyPond markup can be rendered to inline SVG for the web.
 
