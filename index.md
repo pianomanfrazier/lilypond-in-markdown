@@ -31,7 +31,7 @@ renders to this. :o
 {% endlilypond %}
 
 The lilypond must be enclosed in Nunjucks tags.
-```ly/0,2
+```text/0,2
 {% raw %}{% lilypond 'inline'|'img', 'preview'|'full', 'height' %}
   % lilypond markup ...
 {% endlilypond %}{% endraw %}
