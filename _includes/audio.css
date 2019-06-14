@@ -1,0 +1,61 @@
+/* AUDIO CONTROLS */
+.progress-bar,
+.inner-progress-bar {
+  height: 2px;
+  border-radius: 1px;
+}
+.progress-bar {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 6px;
+  padding: 0;
+  background-color: #EEE;
+}
+.inner-progress-bar {
+  width: 0%;
+  padding: 0;
+  margin: 0;
+  background-color:#888;
+  transition: width 0.1s ease;
+}
+.lilypond-audio {
+  width: 100%;
+  text-align: center;
+}
+.lilypond-audio.error {
+  background-color: rgb(255, 180, 180);
+  border-radius: 4px;
+  color: rgb(153, 0, 0);
+}
+.lilypond svg:hover,
+.lilypond-audio svg:hover {
+  cursor: pointer;
+}
+.lilypond-audio svg {
+  fill: #444;
+  stroke: #444;
+  vertical-align: middle;
+}
+.lilypond-audio button {
+  padding: 0 0.5em;
+  margin: 0 0.5em;
+  border: 0;
+  background: none;
+}
+.lilypond-audio button:hover {
+  cursor: pointer;
+}
+.lilypond-audio.paused .i-pause {
+  display: none;
+}
+.lilypond-audio.paused .i-play {
+  display: inline-block;
+}
+.lilypond-audio.playing .i-pause {
+  display: inline-block;
+}
+.lilypond-audio.playing .i-play {
+  display: none;
+}

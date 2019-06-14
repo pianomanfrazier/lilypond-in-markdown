@@ -31,5 +31,8 @@
     "typography-theme-funston": "^0.16.19",
     "typography-theme-lincoln": "^0.16.19"
   },
-  "dependencies": {}
+  "dependencies": {
+    "clean-css": "^4.2.1",
+    "uglify-es": "^3.3.9"
+  }
 }
