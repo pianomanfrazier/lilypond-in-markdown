@@ -9,6 +9,8 @@ const {exec} = require('child_process');
 const {svgo} = require('./svgoConfig');
 const {lilypondExtension} = require('./lilypondExtension');
 const {lilycodeExtension} = require('./lilycodeExtension');
+const {lilyaudioExtension} = require('./lilyaudioExtension');
+const {lilypondSyntax} = require('./lilypondSyntax.js')
 
 // Setup up typography
 const Typography = require('typography');
@@ -24,6 +26,13 @@ const minifyHtml = (content) => htmlmin.minify(content, {
 });
 
 module.exports = function(eleventyConfig) {
+
+   eleventyConfig.addPlugin(pluginSyntaxHighlight, {
+     init: function({Prism}) {
+       Prism.languages.lilypond = lilypondSyntax;
+       Prism.languages.ly = Prism.languages.lilypond;
+     },
+   });
 
   eleventyConfig.addFilter('cssmin', function(code) {
     return new CleanCSS({}).minify(code).styles;
@@ -58,9 +67,11 @@ module.exports = function(eleventyConfig) {
   // custom tags for processing lilypond
   eleventyConfig.addNunjucksTag('lilycode', lilycodeExtension);
   eleventyConfig.addNunjucksTag('lilypond', lilypondExtension);
+  eleventyConfig.addNunjucksTag('lilyaudio', lilyaudioExtension);
 
   eleventyConfig.addPassthroughCopy('img');
   eleventyConfig.addPassthroughCopy('css');
+  eleventyConfig.addPassthroughCopy('js');
   eleventyConfig.addPassthroughCopy('audio');
 
   /* Markdown Plugins */

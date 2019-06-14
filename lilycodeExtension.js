@@ -44,7 +44,9 @@ function lilycodeExtension(nunjucksEngine) {
           callback(null, ret);
         });
       } else {
-        const execString = `echo "${body().trim()}" | ly highlight -d full_html=false -d wrapper_tag=code -d document_id=language-lilypond`;
+        // characters getting escaped on command line
+        fs.writeFileSync(`${directory}/${hash}.ly`, body().trim());
+        const execString = `ly highlight ${directory}/${hash}.ly -d full_html=false -d wrapper_tag=code -d document_id=language-lilypond`;
         exec(execString, function(err, stdout, stderr) {
           if (err) {
             console.error(err);

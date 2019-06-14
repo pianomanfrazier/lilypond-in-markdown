@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     {%- typographyFonts 'xxx' -%}
     {%- typography 'xxx' -%}
+    {% set css %}{% include "audio.css" %}{% endset %}
+    <style>{{ css | cssmin | safe }}</style>
     <style>
       main {
         max-width: 45em;
@@ -22,7 +24,10 @@
         padding: 0.5em;
       }
       .lilypond {
-        margin-bottom: 2em;
+        margin-bottom: 1em;
+      }
+      .lilypond-container {
+        margin: 2em 0;
       }
       .lilypond svg,
       .lilypond svg > a,
@@ -71,6 +76,10 @@
       </main>
 
       <footer></footer>
+
+      <!-- External libraries -->
+      <script src="/js/lib/howler.min.js"></script>
+      <script src="/js/audio.js"></script>
     </div>
 	</body>
 </html>

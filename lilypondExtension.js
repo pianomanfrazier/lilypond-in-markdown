@@ -1,4 +1,3 @@
-
 const htmlmin = require('html-minifier');
 const md5 = require('crypto-js/md5');
 const fs = require('fs');
@@ -41,7 +40,7 @@ function lilypondExtension(nunjucksEngine) {
           }
 
           ${body()}`;
-      const hash = md5(tempString + template);
+      const hash = md5(tempString);
       const lilypondOpen = `<div class="lilypond">`;
       const lilypondClose = `</div>`;
       const files = fs.readdirSync(`${directory}`);

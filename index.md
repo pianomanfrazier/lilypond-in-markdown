@@ -554,7 +554,7 @@ bassMusic = \relative c { \clef "bass_8" \key g \major g,1 b }
 
 ## Gregorian Chant
 
-{% lilypond 'inline', 'preview', 'XXX' %}
+{% lilypond 'inline', 'preview', '3 in' %}
 \include "gregorian.ly"
 
 chant = \relative c' {
@@ -633,7 +633,7 @@ verba = \lyricmode {
 ## Figured Bass
 
 
-{% lilypond 'inline', 'preview', 'XXX' %}
+{% lilypond 'inline', 'preview', '3 in' %}
 upper = \relative c' {
   \clef treble
   \key c \major

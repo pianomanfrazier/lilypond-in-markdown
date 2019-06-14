@@ -1,28 +1,30 @@
 /* AUDIO CONTROLS */
 .progress-bar,
 .inner-progress-bar {
-  height: 2px;
-  border-radius: 1px;
+  height: 4px;
+  border-radius: 2px;
 }
 .progress-bar {
-  width: 98%;
+  width: 160px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 6px;
   padding: 0;
-  background-color: #EEE;
+  background-color: #DDD;
 }
 .inner-progress-bar {
   width: 0%;
   padding: 0;
   margin: 0;
   background-color:#888;
+  background-image: linear-gradient(#333, #888);
   transition: width 0.1s ease;
 }
 .lilypond-audio {
   width: 100%;
   text-align: center;
+  margin-bottom: 2em;
 }
 .lilypond-audio.error {
   background-color: rgb(255, 180, 180);
@@ -34,8 +36,8 @@
   cursor: pointer;
 }
 .lilypond-audio svg {
-  fill: #444;
-  stroke: #444;
+  fill: #333;
+  stroke: #333;
   vertical-align: middle;
 }
 .lilypond-audio button {
