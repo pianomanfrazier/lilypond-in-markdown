@@ -20,6 +20,8 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.2",
     "child-process": "^1.0.2",
     "crypto-js": "^3.1.9-1",
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.13.0",
     "fs": "0.0.1-security",
     "html-minifier": "^4.0.0",
     "markdown-it": "^8.4.2",
