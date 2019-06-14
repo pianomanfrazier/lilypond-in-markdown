@@ -1,8 +1,9 @@
+/* eslint-disable max-len */
 const CleanCSS = require('clean-css');
 const UglifyJS = require('uglify-es');
 const htmlmin = require('html-minifier');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const MD5 = require('crypto-js/md5');
+const md5 = require('crypto-js/md5');
 const fs = require('fs');
 const {exec} = require('child_process');
 const {svgo} = require('./LilypondExtension');
@@ -26,8 +27,6 @@ module.exports = function(eleventyConfig) {
       // TODO:
       //    embed scheme language inside lilypond
       //    implement tempo, fig bass, rhythm
-      const re_identifier = /[^\W\d_]+([_-][^\W\d_]+)*/;
-      const re_identifier_end = /(?![_-]?[^\W\d])/;
       const string = /(")(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/;
 
       // Bug in eleventy-syntax-highlight prevents multi-line elements
@@ -80,9 +79,11 @@ module.exports = function(eleventyConfig) {
     googleFonts = theme.googleFonts;
     const fonts = [];
     for (const i in googleFonts) {
-      const name = googleFonts[i].name.replace(/\s/g, '+');
-      const tempString = `${name}:${googleFonts[i].styles.join(',')}`;
-      fonts.push(tempString);
+      if (Object.prototype.hasOwnProperty.call(googleFonts, i)) {
+        const name = googleFonts[i].name.replace(/\s/g, '+');
+        const tempString = `${name}:${googleFonts[i].styles.join(',')}`;
+        fonts.push(tempString);
+      }
     }
     return `<link href="https://fonts.googleapis.com/css?family=${fonts.join('|')}" rel="stylesheet">`;
   });
@@ -104,7 +105,7 @@ module.exports = function(eleventyConfig) {
         // TODO: change all sync calls to async
         const directory = `_lilycode`;
         const files = fs.readdirSync(`${directory}`);
-        const hash = MD5(body());
+        const hash = md5(body());
         let isCached = false;
         for (const i in files) {
           if (files[i] === `${hash}.html`) {
@@ -168,7 +169,7 @@ module.exports = function(eleventyConfig) {
           }
 
           ${body()}`;
-        const hash = MD5(tempString + template);
+        const hash = md5(tempString + template);
         const lilypondOpen = `<div class="lilypond">`;
         const lilypondClose = `</div>`;
         const files = fs.readdirSync(`${directory}`);
