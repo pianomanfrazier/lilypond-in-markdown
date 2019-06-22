@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="130.00mm" height="17.78mm" viewBox="0 0 73.9772 10.1178">
+<!-- Page: 1/1 -->
+<text transform="translate(1.4226, -0.0000)" font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan/>
+</text>
+<line transform="translate(1.4226, 6.7760)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="45.1010" y2="-0.0000"/>
+<line transform="translate(1.4226, 5.7760)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="45.1010" y2="-0.0000"/>
+<line transform="translate(1.4226, 4.7760)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="45.1010" y2="-0.0000"/>
+<line transform="translate(1.4226, 3.7760)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="45.1010" y2="-0.0000"/>
+<line transform="translate(1.4226, 2.7760)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="45.1010" y2="-0.0000"/>
+<rect transform="translate(15.1796, 4.7760)" x="-0.0650" y="-0.3139" width="0.1300" height="3.3139" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/45ee8cb467ab52a4f270cdd2f398327f.ly:23:6:7">
+<path transform="translate(22.9168, 3.7760) scale(0.0040, -0.0040)" d="M218 136c55 0 108 -28 108 -89c0 -71 -55 -121 -102 -149c-35 -21 -75 -34 -116 -34c-55 0 -108 28 -108 89c0 71 55 121 102 149c35 21 75 34 116 34z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/45ee8cb467ab52a4f270cdd2f398327f.ly:34:2:3">
+<line transform="translate(23.3682, 7.6913)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1122" stroke="currentColor" x1="0" y1="0" x2="0.2806" y2="-0.2806"/>
+<line transform="translate(23.6489, 7.4107)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1122" stroke="currentColor" x1="0" y1="0" x2="0.2806" y2="0.2806"/>
+<text transform="translate(22.8636, 9.6253)" font-family="serif" font-size="2.4696" text-anchor="start" fill="currentColor">
+<tspan>
+4</tspan>
+</text>
+</a>
+<rect transform="translate(22.9818, 4.7760)" x="-0.0650" y="-0.8139" width="0.1300" height="3.3139" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/45ee8cb467ab52a4f270cdd2f398327f.ly:23:8:9">
+<path transform="translate(30.7191, 3.2760) scale(0.0040, -0.0040)" d="M218 136c55 0 108 -28 108 -89c0 -71 -55 -121 -102 -149c-35 -21 -75 -34 -116 -34c-55 0 -108 28 -108 89c0 71 55 121 102 149c35 21 75 34 116 34z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/45ee8cb467ab52a4f270cdd2f398327f.ly:35:2:3">
+<line transform="translate(31.1705, 7.6830)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1122" stroke="currentColor" x1="0" y1="0" x2="0.2806" y2="-0.2806"/>
+<line transform="translate(31.4511, 7.4024)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1122" stroke="currentColor" x1="0" y1="0" x2="0.2806" y2="0.2806"/>
+<text transform="translate(30.6658, 9.5912)" font-family="serif" font-size="2.4696" text-anchor="start" fill="currentColor">
+<tspan>
+5</tspan>
+</text>
+</a>
+<rect transform="translate(30.7841, 4.7760)" x="-0.0650" y="-1.3139" width="0.1300" height="3.3139" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/45ee8cb467ab52a4f270cdd2f398327f.ly:23:10:11">
+<path transform="translate(38.7713, 2.2760) scale(0.0040, -0.0040)" d="M218 136c55 0 108 -28 108 -89c0 -71 -55 -121 -102 -149c-35 -21 -75 -34 -116 -34c-55 0 -108 28 -108 89c0 71 55 121 102 149c35 21 75 34 116 34z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/45ee8cb467ab52a4f270cdd2f398327f.ly:36:2:3">
+<line transform="translate(39.2228, 7.6830)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1122" stroke="currentColor" x1="0" y1="0" x2="0.2806" y2="-0.2806"/>
+<line transform="translate(39.5034, 7.4024)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1122" stroke="currentColor" x1="0" y1="0" x2="0.2806" y2="0.2806"/>
+<text transform="translate(38.7181, 9.5912)" font-family="serif" font-size="2.4696" text-anchor="start" fill="currentColor">
+<tspan>
+7</tspan>
+</text>
+</a>
+<rect transform="translate(38.8363, 4.7760)" x="-0.0650" y="-2.3139" width="0.1300" height="3.3139" ry="0.0400" fill="currentColor"/>
+<rect transform="translate(8.4618, 4.7760)" x="-0.0650" y="-3.0000" width="0.1300" height="3.3139" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/45ee8cb467ab52a4f270cdd2f398327f.ly:23:2:3">
+<path transform="translate(7.2226, 5.2760) scale(0.0040, -0.0040)" d="M218 136c55 0 108 -28 108 -89c0 -71 -55 -121 -102 -149c-35 -21 -75 -34 -116 -34c-55 0 -108 28 -108 89c0 71 55 121 102 149c35 21 75 34 116 34z" fill="currentColor"/>
+</a>
+<path transform="translate(2.2226, 5.7760) scale(0.0040, -0.0040)" d="M376 262c4 0 9 1 13 1c155 0 256 -128 256 -261c0 -76 -33 -154 -107 -210c-22 -17 -47 -28 -73 -36c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -120 -90 -228 -208 -228c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95
+c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65c96 0 157 92 163 191c1 18 2 37 2 55c0 31 -1 61 -4 92c-29 -5 -58 -8 -89 -8c-188 0 -333 172 -333 374c0 177 131 306 248 441c-19 62 -37 125 -45 190c-6 52 -7 104 -7 156c0 115 55 224 149 292c3 2 7 3 10 3c4 0 7 0 10 -3
+c71 -84 133 -245 133 -358c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207zM461 -203c68 24 113 95 113 164c0 90 -66 179 -173 190c24 -116 46 -231 60 -354zM74 28c0 -135 129 -247 264 -247c28 0 55 2 82 6c-14 127 -37 245 -63 364c-79 -8 -124 -61 -124 -119
+c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-3 0 -6 1 -9 2c-80 43 -117 115 -117 185c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM408 1045c-99 -48 -162 -149 -162 -259c0 -74 18 -133 36 -194
+c80 97 146 198 146 324c0 55 -4 79 -20 129z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/45ee8cb467ab52a4f270cdd2f398327f.ly:20:2:3">
+</a>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/45ee8cb467ab52a4f270cdd2f398327f.ly:32:2:3">
+<line transform="translate(7.6740, 7.6913)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1122" stroke="currentColor" x1="0" y1="0" x2="0.2806" y2="-0.2806"/>
+<line transform="translate(7.9547, 7.4107)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1122" stroke="currentColor" x1="0" y1="0" x2="0.2806" y2="0.2806"/>
+<text transform="translate(7.1694, 9.6253)" font-family="serif" font-size="2.4696" text-anchor="start" fill="currentColor">
+<tspan>
+1</tspan>
+</text>
+</a>
+<text transform="translate(3.9500, 9.6253)" font-family="serif" font-weight="bold" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>
+a:</tspan>
+</text>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/45ee8cb467ab52a4f270cdd2f398327f.ly:33:2:3">
+<line transform="translate(15.5660, 7.6572)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1122" stroke="currentColor" x1="0" y1="0" x2="0.2806" y2="-0.2806"/>
+<line transform="translate(15.8466, 7.3766)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1122" stroke="currentColor" x1="0" y1="0" x2="0.2806" y2="0.2806"/>
+<text transform="translate(15.0613, 9.5912)" font-family="serif" font-size="2.4696" text-anchor="start" fill="currentColor">
+<tspan>
+3</tspan>
+</text>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/45ee8cb467ab52a4f270cdd2f398327f.ly:23:4:5">
+<path transform="translate(15.1146, 4.2760) scale(0.0040, -0.0040)" d="M218 136c55 0 108 -28 108 -89c0 -71 -55 -121 -102 -149c-35 -21 -75 -34 -116 -34c-55 0 -108 28 -108 89c0 71 55 121 102 149c35 21 75 34 116 34z" fill="currentColor"/>
+</a>
+</svg>

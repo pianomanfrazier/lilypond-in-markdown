@@ -14,8 +14,9 @@ const {lilypondSyntax} = require('./lilypondSyntax.js')
 
 // Setup up typography
 const Typography = require('typography');
-const theme = require('typography-theme-lincoln').default;
-// const theme = require('typography-theme-funston');
+// lincoln theme clobbers the lilypond svg
+// const theme = require('typography-theme-lincoln').default;
+const theme = require('typography-theme-funston');
 const typography = new Typography(theme);
 
 // used to minify the svg output of Lilypond
@@ -77,6 +78,7 @@ module.exports = function(eleventyConfig) {
   /* Markdown Plugins */
   const markdownIt = require('markdown-it');
   const emoji = require('markdown-it-emoji');
+  const sup = require('markdown-it-sup');
   const options = {
     html: true,
     breaks: true,
@@ -87,6 +89,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setLibrary('md', markdownIt(options)
       .use(emoji)
+      .use(sup)
   );
 
   return {

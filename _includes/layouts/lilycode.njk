@@ -29,11 +29,19 @@
       .lilypond-container {
         margin: 2em 0;
       }
+      /*
       .lilypond svg,
       .lilypond svg > a,
       .lilypond path,
       .lilypond rect {
-        color: #222 !important;
+         color: #222 !important;
+      }
+      */
+      /* override the typography theme
+       * it clobbers the lilypond svg a tags
+       */
+      body {
+        color: #333;
       }
       .github {
         position: absolute;

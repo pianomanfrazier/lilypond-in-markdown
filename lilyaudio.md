@@ -35,6 +35,179 @@ LilyPond can generate a midi file. The midi will then be processed to generate s
 }
 {% endlilyaudio %}
 
+## The Blues Scale
+
+The blues scale is the foundation for all blues and boogie woogie. There are two forms: major and minor. They both come from the pentatonic scale. The major pentatonic scale are the 1^st^, 2^nd^, 3^rd^, 5^th^, and 6^th^ degrees of the scale.
+
+{% lilyaudio 'inline', 'preview', '0.7 in', 'piano' %}
+
+\include "../_lilypond_styles/roman_numeral_analysis_tool.ily"
+
+bassline = \relative c' {
+  \clef treble
+  \key c \major
+  \time 7/4
+  \override Staff.TimeSignature #'stencil = ##f
+  c d e g a
+}
+
+analysis = \lyricmode {
+  \override LyricText.self-alignment-X = #-0.6
+  \offset StanzaNumber.X-offset #-3
+  \set stanza  = #"C:"
+  % For bare Roman numerals, \rN simply outputs the string.
+  %\markup \rN { I }
+  \markup \scaleDegree { 1 }
+  \markup \scaleDegree { 2 }
+  \markup \scaleDegree { 3 }
+  \markup \scaleDegree { 5 }
+  \markup \scaleDegree { 6 }
+}
+
+\score {
+  \new Staff <<
+    \new Voice = "bass" { \bassline }
+    \new Lyrics \with {
+      % to control distance of analysis from staff
+      \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 6.5))
+    } \lyricsto "bass" { \analysis }
+  >>
+  \layout {
+    \context {
+      \Score
+      % to control horizontal spacing
+      \override SpacingSpanner.shortest-duration-space = #6
+    }
+    \context {
+      \Lyrics
+      % to control global size
+      %\override LyricText.font-size = #-1
+    }
+  }
+  \midi{\tempo 4 = 130}
+}
+{% endlilyaudio %}
+
+And the relative minor key, **a minor**, has the same notes as **C major**  but produces a minor penatonic scale. For a minor the scale degrees are the 1^st^, 3^rd^, 4^th^, 5^th^, and the 7^th^.
+
+{% lilyaudio 'inline', 'preview', '0.7 in', 'piano' %}
+
+\include "../_lilypond_styles/roman_numeral_analysis_tool.ily"
+
+bassline = \relative c'' {
+  \clef treble
+  \key c \major
+  \time 7/4
+  \override Staff.TimeSignature #'stencil = ##f
+  a c d e g
+}
+
+analysis = \lyricmode {
+  \override LyricText.self-alignment-X = #-0.6
+  \offset StanzaNumber.X-offset #-3
+  \set stanza  = #"a:"
+  % For bare Roman numerals, \rN simply outputs the string.
+  %\markup \rN { I }
+  \markup \scaleDegree { 1 }
+  \markup \scaleDegree { 3 }
+  \markup \scaleDegree { 4 }
+  \markup \scaleDegree { 5 }
+  \markup \scaleDegree { 7 }
+}
+
+\score {
+  \new Staff <<
+    \new Voice = "bass" { \bassline }
+    \new Lyrics \with {
+      % to control distance of analysis from staff
+      %\override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 6.5))
+    } \lyricsto "bass" { \analysis }
+  >>
+  \layout {
+    \context {
+      \Score
+      % to control horizontal spacing
+      \override SpacingSpanner.shortest-duration-space = #6
+    }
+    \context {
+      \Lyrics
+      % to control global size
+      %\override LyricText.font-size = #-1
+    }
+  }
+  \midi{\tempo 4 = 130}
+}
+{% endlilyaudio %}
+
+To get the textbook version of the blues scale we just add in the flatted 5^th^.
+
+{% lilyaudio 'inline', 'preview', '0.7 in', 'piano' %}
+\score {
+  \relative c'' {
+    \clef "treble"
+    \time 7/4
+    \override Staff.TimeSignature #'stencil = ##f
+    a c d \tweak color #magenta ees e g a
+  }
+  \layout{}
+  \midi{\tempo 4 = 130}
+}
+{% endlilyaudio %}
+
+And you often hear the major form of this as well with the half step embellishments between 2 and 3, and between 5 and 6.
+
+{% lilyaudio 'inline', 'preview', '0.7 in', 'piano' %}
+\score {
+  \relative c'' {
+    \clef "treble"
+    \time 8/4
+    \override Staff.TimeSignature #'stencil = ##f
+    c d \tweak color #magenta ees e g \tweak color #magenta aes a
+  }
+  \layout{}
+  \midi{\tempo 4 = 130}
+}
+{% endlilyaudio %}
+
+Here are some blues licks.
+
+{% lilyaudio 'inline', 'preview', '0.7 in', 'piano' %}
+\score {
+  \relative c'' {
+    \clef "treble"
+    d8 ees \tuplet 3/2 { e[ g a] } <e g a c>4 <f a b d>8 <e g a c>4. 
+  }
+  \layout{}
+  \midi{\tempo 4 = 130}
+}
+{% endlilyaudio %}
+
+And often both scales get mixed interchangably.
+
+{% lilyaudio 'inline', 'preview', '0.7 in', 'piano' %}
+\score {
+  \relative c'' {
+    \clef "treble"
+    fis8 g c fis, g bes 
+    fis g c fis, g bes 
+    \tweak color #magenta 
+    g
+    \tweak color #magenta 
+    gis
+    \tweak color #magenta 
+    a
+    \tweak color #magenta 
+    c
+    \tweak color #magenta 
+    d
+    \tweak color #magenta 
+    c
+  }
+  \layout{}
+  \midi{\tempo 4 = 130}
+}
+{% endlilyaudio %}
+
 ## Some Boogie Woogie Bass Lines
 
 {% lilyaudio 'inline', 'preview', '2.3 in', 'piano' %}
@@ -76,6 +249,17 @@ LilyPond can generate a midi file. The midi will then be processed to generate s
 	}
 	\layout{}
   \midi{\tempo 4 = 160}
+}
+{% endlilyaudio %}
+
+{% lilyaudio 'inline', 'preview', '2.3 in', 'piano' %}
+\score{
+	\relative c'' {
+    \clef "treble"
+    c'4 bes g8 fis f ees c2
+	}
+	\layout{}
+  \midi{\tempo 4 = 140}
 }
 {% endlilyaudio %}
 

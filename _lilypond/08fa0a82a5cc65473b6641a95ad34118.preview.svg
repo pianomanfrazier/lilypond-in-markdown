@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="59.31mm" height="15.73mm" viewBox="0.0000 -0.0400 33.7500 8.9500">
+<line transform="translate(0.0000, 7.3600)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="33.7500" y2="-0.0000"/>
+<line transform="translate(0.0000, 6.3600)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="33.7500" y2="-0.0000"/>
+<line transform="translate(0.0000, 5.3600)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="33.7500" y2="-0.0000"/>
+<line transform="translate(0.0000, 4.3600)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="33.7500" y2="-0.0000"/>
+<line transform="translate(0.0000, 3.3600)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="33.7500" y2="-0.0000"/>
+<rect transform="translate(0.0000, 2.3600)" x="12.2292" y="-0.1000" width="1.8053" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(0.0000, 1.3600)" x="8.3739" y="-0.1000" width="1.9563" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(0.0000, 2.3600)" x="8.3739" y="-0.1000" width="1.9563" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(27.6046, 5.3600)" x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+<rect transform="translate(25.4021, 5.3600)" x="-0.0650" y="-1.3139" width="0.1300" height="2.5013" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/08fa0a82a5cc65473b6641a95ad34118.ly:18:21:22">
+<path transform="translate(25.3371, 3.8600) scale(0.0040, -0.0040)" d="M218 136c55 0 108 -28 108 -89c0 -71 -55 -121 -102 -149c-35 -21 -75 -34 -116 -34c-55 0 -108 28 -108 89c0 71 55 121 102 149c35 21 75 34 116 34z" fill="currentColor"/>
+</a>
+<path transform="translate(21.1168, 3.3600) scale(0.0040, -0.0040)" d="M-8 375c8 4 17 7 26 7s16 -3 24 -7l-2 -183l106 20h3c10 0 18 -7 18 -17l7 -570c-8 -4 -16 -7 -25 -7s-17 3 -25 7l3 183l-106 -20h-3c-10 0 -18 7 -18 17zM131 112l-92 -17l-3 -207l92 17z" fill="currentColor"/>
+<rect transform="translate(22.2278, 5.3600)" x="-0.0650" y="-1.8139" width="0.1300" height="2.8758" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/08fa0a82a5cc65473b6641a95ad34118.ly:18:19:20">
+<path transform="translate(22.1628, 3.3600) scale(0.0040, -0.0040)" d="M218 136c55 0 108 -28 108 -89c0 -71 -55 -121 -102 -149c-35 -21 -75 -34 -116 -34c-55 0 -108 28 -108 89c0 71 55 121 102 149c35 21 75 34 116 34z" fill="currentColor"/>
+</a>
+<path transform="translate(17.7626, 3.3600) scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
+c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
+<polygon transform="translate(15.8584, 6.1700)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0800" fill="currentColor" stroke="currentColor" points="9.5686 0.1800 9.5686 0.5800 0.0400 0.2000 0.0400 -0.2000"/>
+<rect transform="translate(28.8876, 5.3600)" x="-0.0650" y="-0.2410" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/08fa0a82a5cc65473b6641a95ad34118.ly:18:25:26">
+<path transform="translate(28.8226, 4.8600) scale(0.0040, -0.0040)" d="M314 65c0 24 -21 41 -42 41c-4 0 -8 0 -12 -1c-31 -9 -78 -40 -115 -64s-84 -53 -104 -78c-7 -8 -10 -18 -10 -28c0 -24 21 -41 42 -41c4 0 8 0 12 1c31 9 77 40 114 64s84 53 104 78c7 8 11 18 11 28zM262 136c46 0 82 -21 82 -71c0 -19 -4 -39 -10 -57
+c-12 -37 -32 -72 -64 -94c-53 -36 -113 -50 -187 -50c-46 0 -83 21 -83 71c0 19 5 39 11 57c12 37 31 72 63 94c53 36 114 50 188 50z" fill="currentColor"/>
+</a>
+<path transform="translate(24.1871, 3.8600) scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/08fa0a82a5cc65473b6641a95ad34118.ly:18:8:9">
+<path transform="translate(12.4042, 1.8600) scale(0.0040, -0.0040)" d="M218 136c55 0 108 -28 108 -89c0 -71 -55 -121 -102 -149c-35 -21 -75 -34 -116 -34c-55 0 -108 28 -108 89c0 71 55 121 102 149c35 21 75 34 116 34z" fill="currentColor"/>
+</a>
+<rect transform="translate(8.7650, 5.3600)" x="-0.0650" y="-3.8139" width="0.1300" height="3.8139" ry="0.0400" fill="currentColor"/>
+<path transform="translate(5.0000, 5.3600) scale(0.0040, -0.0040)" d="M359 27c-49 0 -75 42 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12c0 -94 -105 -174 -183 -174c-68 0 -137 21 -184 70
+c-49 51 -66 122 -66 193s17 142 66 193c47 49 116 69 184 69c87 0 160 -64 175 -150c1 -5 1 -9 1 -13c0 -40 -30 -72 -67 -72z" fill="currentColor"/>
+<path transform="translate(0.8000, 6.3600) scale(0.0040, -0.0040)" d="M376 262c4 0 9 1 13 1c155 0 256 -128 256 -261c0 -76 -33 -154 -107 -210c-22 -17 -47 -28 -73 -36c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -120 -90 -228 -208 -228c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95
+c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65c96 0 157 92 163 191c1 18 2 37 2 55c0 31 -1 61 -4 92c-29 -5 -58 -8 -89 -8c-188 0 -333 172 -333 374c0 177 131 306 248 441c-19 62 -37 125 -45 190c-6 52 -7 104 -7 156c0 115 55 224 149 292c3 2 7 3 10 3c4 0 7 0 10 -3
+c71 -84 133 -245 133 -358c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207zM461 -203c68 24 113 95 113 164c0 90 -66 179 -173 190c24 -116 46 -231 60 -354zM74 28c0 -135 129 -247 264 -247c28 0 55 2 82 6c-14 127 -37 245 -63 364c-79 -8 -124 -61 -124 -119
+c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-3 0 -6 1 -9 2c-80 43 -117 115 -117 185c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM408 1045c-99 -48 -162 -149 -162 -259c0 -74 18 -133 36 -194
+c80 97 146 198 146 324c0 55 -4 79 -20 129z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/08fa0a82a5cc65473b6641a95ad34118.ly:18:4:5">
+<path transform="translate(8.7000, 1.3600) scale(0.0040, -0.0040)" d="M218 136c55 0 108 -28 108 -89c0 -71 -55 -121 -102 -149c-35 -21 -75 -34 -116 -34c-55 0 -108 28 -108 89c0 71 55 121 102 149c35 21 75 34 116 34z" fill="currentColor"/>
+</a>
+<rect transform="translate(15.9234, 5.3600)" x="-0.0650" y="-2.3139" width="0.1300" height="3.1265" ry="0.0400" fill="currentColor"/>
+<rect transform="translate(19.2776, 5.3600)" x="-0.0650" y="-1.8139" width="0.1300" height="2.7591" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/08fa0a82a5cc65473b6641a95ad34118.ly:18:15:16">
+<path transform="translate(19.2126, 3.3600) scale(0.0040, -0.0040)" d="M218 136c55 0 108 -28 108 -89c0 -71 -55 -121 -102 -149c-35 -21 -75 -34 -116 -34c-55 0 -108 28 -108 89c0 71 55 121 102 149c35 21 75 34 116 34z" fill="currentColor"/>
+</a>
+<rect transform="translate(12.4692, 5.3600)" x="-0.0650" y="-3.3139" width="0.1300" height="3.3139" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///home/ryan/projects/lilypond-in-markdown/_lilypond/08fa0a82a5cc65473b6641a95ad34118.ly:18:12:13">
+<path transform="translate(15.8584, 2.8600) scale(0.0040, -0.0040)" d="M218 136c55 0 108 -28 108 -89c0 -71 -55 -121 -102 -149c-35 -21 -75 -34 -116 -34c-55 0 -108 28 -108 89c0 71 55 121 102 149c35 21 75 34 116 34z" fill="currentColor"/>
+</a>
+<path transform="translate(11.2542, 1.8600) scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</svg>
