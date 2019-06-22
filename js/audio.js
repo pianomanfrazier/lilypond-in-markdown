@@ -9,20 +9,15 @@ var animationLoop = function(howl, el) {
     raf: '',
     running: false,
     start: (function() {
-      var start = null;
       this.running = true;
       function step(timestamp) {
-        if (!start) start = timestamp;
-        if (!this.running) {
-          window.cancelAnimationFrame(this.raf);
-          return;
+        if (this.running) {
+          window.requestAnimationFrame(step);
         }
-        var progress = timestamp - start;
         updateStatusBar(el.childNodes[0], howl.seek() / howl.duration());
-        window.requestAnimationFrame(step);
       }
       step.bind(this);
-      this.raf = window.requestAnimationFrame(step);
+      window.requestAnimationFrame(step);
     }).bind(this),
     cancel: (function() {
       this.running = false;
