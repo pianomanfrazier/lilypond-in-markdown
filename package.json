@@ -24,7 +24,7 @@
     "eslint-config-google": "^0.13.0",
     "fs": "0.0.1-security",
     "html-minifier": "^4.0.0",
-    "markdown-it": "^8.4.2",
+    "markdown-it": "^12.3.2",
     "markdown-it-emoji": "^1.4.0",
     "svgo": "^1.2.2",
     "typography": "^0.16.19",
